@@ -1,6 +1,33 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color:  white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-image: url(./assets/home-background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1, p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+p {
+  font-size: 24px;
+}
+
+#enter-btn {
+  font-size: 20px;
+  color: white;
 }
