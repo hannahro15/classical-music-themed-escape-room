@@ -11,7 +11,7 @@ import concertHallImg from './assets/concert-hall.webp'
 
 function RoomsGrid() {
     return (
-    <>
+    <div class="rooms-grid-container">
       <h2>Select a Room</h2>
         <div className="rooms-grid">
         <div className="room-card">
@@ -60,7 +60,7 @@ function RoomsGrid() {
           <p>Face the ultimate performance that will determine your escape.</p>
         </div>
       </div>
-    </>
+    </div>
   )
 };
 export default RoomsGrid

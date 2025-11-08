@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import HomePage from './components/HomePage.jsx'
+import HomePage from './components/home.jsx'
 import RoomsGrid from './rooms-grid.jsx'
 
 function App() {
