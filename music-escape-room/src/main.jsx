@@ -7,8 +7,8 @@ const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/classical-music-themed-escape-room">
       <App />
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>
 );
