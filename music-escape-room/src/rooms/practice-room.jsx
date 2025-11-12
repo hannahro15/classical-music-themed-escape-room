@@ -18,28 +18,15 @@ function PracticeRoom() {
     switch(activeModal) {
       case 'piano':
         return {
-          title: 'Piano',
-          content: 'Piano content will go here...'
+          content: '_ _ E F _ _ B C'
         };
       case 'sheet-music':
         return {
-          title: 'Sheet Music',
-          content: 'Sheet music content will go here...'
-        };
-      case 'metronome':
-        return {
-          title: 'Metronome',
-          content: 'Metronome content will go here...'
-        };
-      case 'music-stand':
-        return {
-          title: 'Music Stand',
-          content: 'Music stand content will go here...'
+          content: 'A major, Bb major, B major, C major'
         };
       case 'violin':
         return {
-          title: 'Violin',
-          content: 'Violin content will go here...'
+          content: 'E A D G'
         };
       default:
         return null;

@@ -10,6 +10,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/rooms" element={<RoomsGrid />} />
       <Route path="/rooms/practice-room" element={<PracticeRoom />} />
+      <Route path="/rooms/:roomId" element={<div style={{padding: '20px', textAlign: 'center'}}><h2>Room Coming Soon!</h2><p>This room is under construction. Check back soon!</p></div>} />
     </Routes>
   )
 }
