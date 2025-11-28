@@ -1,75 +1,58 @@
 import React, { useState } from 'react';
-import img from '../assets/practice-room.webp';
+import img from '../../assets/practice-room.webp';
+import PianoScalesPuzzle from './puzzles/PianoScalesPuzzle';
+import KeySignaturePuzzle from './puzzles/KeySignaturePuzzle';
+import ViolinStringsPuzzle from './puzzles/ViolinStringsPuzzle';
 import './practice-room.css';
 
 function PracticeRoom() {
   const [activeModal, setActiveModal] = useState(null);
 
-  const handleObjectClick = (objectName) => {
-    console.log('Clicked:', objectName); // Debug log
-    setActiveModal(objectName);
-  };
-
-  const closeModal = () => {
-    setActiveModal(null);
-  };
-
   const renderModalContent = () => {
     switch(activeModal) {
       case 'piano':
-        return {
-          content: '_ _ E F _ _ B C'
-        };
+        return <PianoScalesPuzzle />;
       case 'sheet-music':
-        return {
-          content: 'A major, Bb major, B major, C major'
-        };
+        return <KeySignaturePuzzle />;
       case 'violin':
-        return {
-          content: 'E A D G'
-        };
+        return <ViolinStringsPuzzle />;
       default:
         return null;
     }
   };
-
-  const modalContent = renderModalContent();
 
   return (
     <div className="practice-room">
       <div className="room-container">
         <img src={img} alt="Practice Room" />
         
-        {/* Clickable hotspots */}
         <div 
           className="clickable-object keyboard-hotspot"
-          onClick={() => handleObjectClick('piano')}
+          onClick={() => setActiveModal('piano')}
           title="Click the piano keys"
         />
         
         <div 
           className="clickable-object sheet-music-hotspot"
-          onClick={() => handleObjectClick('sheet-music')}
+          onClick={() => setActiveModal('sheet-music')}
           title="Click the sheet music"
         />
 
         <div 
           className="clickable-object violin-hotspot"
-          onClick={() => handleObjectClick('violin')}
+          onClick={() => setActiveModal('violin')}
           title="Click the violin"
         />
       </div>
       
-      {/* Modal */}
-      {activeModal && modalContent && (
-        <div className="modal-overlay" onClick={closeModal}>
+      {activeModal && (
+        <div className="modal-overlay" onClick={() => setActiveModal(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
-              <h2>{modalContent.title}</h2>
-              <button className="close-button" onClick={closeModal}>×</button>
+              <button className="close-button" onClick={() => setActiveModal(null)}>×</button>
             </div>
             <div className="modal-body">
-              <p>{modalContent.content}</p>
+              {renderModalContent()}
             </div>
           </div>
         </div>
