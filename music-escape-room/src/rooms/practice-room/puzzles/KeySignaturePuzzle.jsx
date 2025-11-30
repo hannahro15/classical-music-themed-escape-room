@@ -1,4 +1,4 @@
-import './KeySignaturePuzzle.css';
+import '../practice-room.css'
 
 function KeySignaturePuzzle() {
   return (

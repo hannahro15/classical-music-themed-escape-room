@@ -1,3 +1,5 @@
+import '../practice-room.css'
+
 function ViolinStringsPuzzle() {
   return (
     <div className="violin-strings-puzzle">

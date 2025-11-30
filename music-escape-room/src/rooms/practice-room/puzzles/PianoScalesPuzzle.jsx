@@ -1,3 +1,5 @@
+import '../practice-room.css'
+
 function PianoScalesPuzzle() {
   return (
     <div className="piano-scales-puzzle">
