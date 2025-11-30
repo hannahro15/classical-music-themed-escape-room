@@ -21,4 +21,9 @@ p {
 #enter-btn {
   font-size: 20px;
   color: white;
+  background-color: #8B4513;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
