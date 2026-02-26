@@ -46,8 +46,31 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
   - `public/` - Static files
   - `rooms/` - Individual room and puzzle components
 
+## Roadmap
+
+The following rooms and features are still under development. See [CONTRIBUTING.md](CONTRIBUTING.md) for full details on each issue.
+
+### Rooms to Implement
+- [ ] The Music Library
+- [ ] The Composer's Study
+- [ ] Baroque Room
+- [ ] The Mozart Room
+- [ ] The Opera Stage
+- [ ] The String Workshop
+- [ ] The Woodwind Workshop
+- [ ] The Concert Hall (final room)
+
+### Features to Build
+- [ ] Make Practice Room puzzles interactive (currently showing placeholder text)
+- [ ] Add in-room navigation (Back to Rooms / Home buttons)
+- [ ] Game completion tracking (mark rooms as solved, overall progress)
+- [ ] Accessibility improvements (ARIA labels, keyboard navigation, focus management)
+- [ ] Unit tests with Vitest + React Testing Library
+
 ## Contributing
-Contributions are welcome! To contribute:
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for a full list of open issues and how to get started.
+
+Quick steps:
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/your-feature`)
 3. Commit your changes
