@@ -46,13 +46,6 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
   - `public/` - Static files
   - `rooms/` - Individual room and puzzle components
 
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes
-4. Push to your fork and submit a pull request
-
 ## License
 This project is for educational and entertainment purposes.
 
