@@ -1,0 +1,59 @@
+/* Themed 404 page (#133) — uses the site's dark background, white text and
+   brown accent, matching home.css and App.css */
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.not-found-emoji {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* App.css gives h1 a fixed 70px, which overflows a phone; clamp it instead */
+.not-found-heading {
+  font-size: clamp(2.5rem, 8vw, 70px);
+  margin-bottom: 1rem;
+}
+
+/* inherits App.css' 24px paragraph size */
+.not-found-text {
+  margin-bottom: 2rem;
+}
+
+.not-found-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* matches #enter-btn in App.css; 44px keeps it a comfortable touch target (#130) */
+.not-found-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #8B4513;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.not-found-btn:hover {
+  background-color: #A0522D;
+}
