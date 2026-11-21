@@ -41,6 +41,16 @@ npm run dev
 
 Then open [http://localhost:5173/classical-music-themed-escape-room/](http://localhost:5173/classical-music-themed-escape-room/) in your browser.
 
+### Deploying
+
+Publish the site to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+Commit your changes first. The deploy stops with "Commit your changes before deploying" if there are uncommitted changes, so the live site always matches a commit.
+
 ## Project Structure
 
 - `src/` - React components, styles, and assets
