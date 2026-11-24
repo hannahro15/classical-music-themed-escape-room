@@ -9,7 +9,7 @@ function PracticeRoom() {
   const [activeModal, setActiveModal] = useState(null);
 
   const renderModalContent = () => {
-    switch(activeModal) {
+    switch (activeModal) {
       case 'piano':
         return <PianoScalesPuzzle />;
       case 'sheet-music':
@@ -25,28 +25,30 @@ function PracticeRoom() {
     <div className="practice-room">
       <div className="room-container">
         <img src={img} alt="Practice Room" />
-        
-        <div 
+
+        <div
           className="clickable-object keyboard-hotspot"
           onClick={() => setActiveModal('piano')}
           title="Click the piano keys"
         />
-        
-        <div 
+
+        <div
           className="clickable-object sheet-music-hotspot"
           onClick={() => setActiveModal('sheet-music')}
           title="Click the sheet music"
         />
 
-        <div 
+        <div
           className="clickable-object violin-hotspot"
           onClick={() => setActiveModal('violin')}
           title="Click the violin"
         />
       </div>
-      
+
       {activeModal && (
         <div className="modal-overlay" onClick={() => setActiveModal(null)}>
+
+// Prevent clicks inside the puzzle container from bubbling up to the backdrop overlay and closing the modal
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <button className="close-button" onClick={() => setActiveModal(null)}>×</button>

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './home.css';
 
-// Create a Home component
+
 function HomePage() {
   return (
     <div className='home-page'>

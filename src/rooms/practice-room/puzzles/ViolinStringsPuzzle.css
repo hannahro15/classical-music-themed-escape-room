@@ -1,4 +1,3 @@
-/* Add CSS variables at the top of the file */
 :root {
   --wood-light: #a0735c;
   --wood-dark: #6b4423;
@@ -239,10 +238,6 @@
 
 .f-hole-right::before { top: -6px; right: -2px; }
 .f-hole-right::after { bottom: -6px; left: -2px; }
-
-/* ==========================
-   STRINGS
-========================== */
 
 /* ==========================
    STRINGS
