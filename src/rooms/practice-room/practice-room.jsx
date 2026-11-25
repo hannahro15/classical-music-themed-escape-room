@@ -47,8 +47,7 @@ function PracticeRoom() {
 
       {activeModal && (
         <div className="modal-overlay" onClick={() => setActiveModal(null)}>
-
-// Prevent clicks inside the puzzle container from bubbling up to the backdrop overlay and closing the modal
+ {/* Stop clicks inside the puzzle from reaching the overlay and closing it */}
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <button className="close-button" onClick={() => setActiveModal(null)}>×</button>
